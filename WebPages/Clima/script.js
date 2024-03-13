@@ -10,7 +10,8 @@ async function fetchWeather() {
     let searchInput = document.getElementById("search").value;
     const weatherDataSection = document.getElementById("weather-data");
     weatherDataSection.style.display = "block"
-    const apiKey="d1b546d52ed09a07163e609b2b37b060"
+    const apiKey=""
+    //insert openWeather api key
     if(searchInput === ""){
         alert('Por favor ingresa una ciudad válida')
     }
