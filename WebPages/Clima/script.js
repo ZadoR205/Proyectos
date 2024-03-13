@@ -17,7 +17,7 @@ async function fetchWeather() {
 
     async function getLonAndLat() {
         const countryCode = 51
-        geocodeURL = `http://api.openweathermap.org/geo/1.0/direct?q=${searchInput.replace(" ", "%20")},${countryCode}&limit=1&appid=${apiKey}`
+        geocodeURL = `https://api.openweathermap.org/geo/1.0/direct?q=${searchInput.replace(" ", "%20")},${countryCode}&limit=1&appid=${apiKey}`
         const response = await fetch(geocodeURL);
         if(!response.ok) {
           console.log("Bad response! ", response.status);
