@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>Weather App</title>
+  </head>
+  <body>
+        <main>
+            <fieldset id="weather-wrapper">
+                <legend><h1>Weather App</h1></legend>
+                <div id="weather-search">
+                    <input type="text" id="search"  placeholder="Busca una ciudad...">
+                    <input type="submit" id="submit" onclick="fetchWeather()" value="buscar">
+                </div>
+                <div id="weather-data" style="display:none;"></div>
+            </fieldset>
+            <script src="script.js"></script>
+        </main>
+  </body>
+</html>
